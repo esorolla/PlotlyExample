@@ -2,7 +2,7 @@
 title: "PlotlyExample"
 author: "Edén Sorolla"
 date: "15/8/2020"
-output: html_document
+output: ioslides_presentation
 ---
 
 ```{r setup, echo = FALSE, eval = FALSE, message = FALSE, results = FALSE}
@@ -32,9 +32,9 @@ df1New <- df1New %>%
 
 ## Plotly Example
 
-We present the cumulative number of infected people with Covid-19 in the different regions from Switzerland till 14th August.
+### We show the cumulative number of infected people with Covid-19 in different regions of Switzerland till 14th August.
 
-```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 9, fig.height = 7}
+```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.width = 8, fig.height = 4}
 fig <- df1New %>%
   plot_ly(
     x = ~region, 
